@@ -31,6 +31,7 @@ public class App extends Jooby {
 
     // инициализация класса
     {
+        System.setProperty("server.port", "9090");
         decoder(MediaType.json, (ctx, type) -> {
             try {
                 return (new ObjectMapper())

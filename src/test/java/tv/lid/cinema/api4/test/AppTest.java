@@ -40,7 +40,7 @@ public final class AppTest {
     private static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
 
     // префикс URL для эндпойнтов
-    private static final String API_URL_PREFIX = "http://localhost:8080/api4";
+    private static final String API_URL_PREFIX = "http://localhost:8090/api4";
 
     // клиент OkHttp
     private static final OkHttpClient CLIENT = new OkHttpClient();
