@@ -57,7 +57,7 @@ public class MovieModel extends CommonModel {
     // создание таблицы в БД
     public static void createTable() throws SQLException {
         CommonModel.dslContext
-            .createTableIfNotExists​(MovieModel.TABLE_MOVIES)
+            .createTableIfNotExists(MovieModel.TABLE_MOVIES)
             .column("id",       SQLDataType.INTEGER.identity(true).nullable(false))
             .column("title",    SQLDataType.VARCHAR(300).nullable(false))
             .column("duration", SQLDataType.SMALLINT.nullable(false))
